@@ -1,4 +1,5 @@
 package tallermecanico;
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,14 +9,17 @@ import javafx.stage.Stage;
 
 
 public class TallerMecanico extends Application {
-        
+    
+    private static Stage stg;
+    
     public static void main(String[] args) {
       launch(args);
     }
 
-     
     @Override
     public void start(Stage stage) throws Exception {
+        stg = stage;
+        
         Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
         
         //Parent root = FXMLLoader.load(getClass().getResource("/view/Ventana.fxml"));
@@ -26,7 +30,14 @@ public class TallerMecanico extends Application {
         stage.setScene(scene);
         
         stage.show();
-        
+    }
+    
+    public void ChangeScene(String fxml) throws IOException{
+        Parent Pant = FXMLLoader.load(getClass().getResource(fxml));
+       
+        stg.setResizable(false);
+        stg.setWidth(600);
+        stg.getScene().setRoot(Pant);
     }
     
 }

@@ -20,14 +20,15 @@ public class VentanaController implements Initializable {
         // TODO
     }    
     
-@FXML
-private void handleButtonAction(ActionEvent event)
-{}
+    @FXML
+    private void handleButtonAction(ActionEvent event)
+    {}
 
-public void CloseApp(ActionEvent event)
-{ Platform.exit();
-  System.exit(0);
-}
+    @FXML
+    public void CloseApp(ActionEvent event) throws Exception
+    { Platform.exit();
+      System.exit(0);
+    }
     
     
 }

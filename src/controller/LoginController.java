@@ -14,7 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
-import javax.swing.JOptionPane;
+import tallermecanico.TallerMecanico;
 
 /**
  * FXML Controller class
@@ -58,9 +58,9 @@ public class LoginController implements Initializable {
     }
     
     @FXML
-    public void eventAction(ActionEvent event){
+    public void eventAction(ActionEvent event) throws Exception {
         Object evt = event.getSource();
-      
+        TallerMecanico m = new TallerMecanico();
         
         if(evt.equals(btnLogin))
             { 
@@ -70,6 +70,7 @@ public class LoginController implements Initializable {
                    String pass = txtPassword.getText();
                    
                    
+                   m.ChangeScene("/view/Ventana.fxml");
                }
                else
                {
