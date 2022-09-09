@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="343.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NuevoTurnoController">
+   <children>
+      <BorderPane prefHeight="251.0" prefWidth="299.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="40.0" prefWidth="254.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="327.0" text="Editar Cliente" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="303.0" prefWidth="342.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <Button layoutX="83.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Crear" />
+                  <Button layoutX="192.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Cancelar" />
+                  <VBox layoutX="14.0" layoutY="17.0" prefHeight="232.0" prefWidth="79.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="80.0" text="NRO CLIENTE:">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="NRO DOC:">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="APELLIDO:">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="NOMBRE:">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="DIRECCION:">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="TELEFONO:">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="VEHICULO:">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="94.0" layoutY="14.0" prefHeight="205.0" prefWidth="144.0">
+                     <children>
+                        <TextField prefHeight="25.0" prefWidth="115.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets bottom="5.0" right="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets bottom="5.0" right="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets bottom="5.0" right="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets bottom="5.0" right="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets right="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <ComboBox prefHeight="25.0" prefWidth="136.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin></ComboBox>
+                        <Label prefHeight="18.0" prefWidth="141.0" text="Seguro vehiculo">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button layoutX="236.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Veh." />
+                  <Label layoutX="14.0" layoutY="228.0" prefWidth="58.0" text="SEGURO:" />
+                  <Button layoutX="240.0" layoutY="18.0" mnemonicParsing="false" text="Buscar" />
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
