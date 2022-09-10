@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
@@ -22,10 +21,10 @@ public class TallerMecanico extends Application {
         stg = stage;
         
         Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
-        
         //Parent root = FXMLLoader.load(getClass().getResource("/view/Ventana.fxml"));
         
         Scene scene = new Scene(root);
+        stage.setResizable(false);
         stage.getIcons().add(new Image("images/ico_taller.jpg"));
         stage.setTitle("Sistema Taller");
         stage.setScene(scene);
@@ -41,13 +40,9 @@ public class TallerMecanico extends Application {
         if (fxml.equals("/view/Ventana.fxml")) {
            stg.setWidth(600);
         }  
-        
-           //Scene scene = new Scene();
-        //scene= stg.getScene();
-        
+                
         stg.getScene().setRoot(Pant);
-        //scene.setRoot(Pant);
-        
+                
     }
     
     

@@ -33,11 +33,13 @@
                 </Menu>
                   <Menu mnemonicParsing="false" text="Reportes">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Listado Trabajos" />
-                        <MenuItem fx:id="InformeServicio" mnemonicParsing="false" text="Informe Servicio" />
+                        <MenuItem mnemonicParsing="false" onAction="#eventReportes" text="Reportes" />
                      </items>
                   </Menu>
-                  <Menu fx:id="salir" mnemonicParsing="false" onAction="#CloseApp" text="Salir" />
+                  <Menu fx:id="salir" mnemonicParsing="false" onAction="#eventCloseApp" text="Salir">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#eventCloseApp" text="Salir" />
+                     </items></Menu>
               </menus>
             </MenuBar>
          </top>

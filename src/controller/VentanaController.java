@@ -18,7 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import tallermecanico.TallerMecanico;
+
 
 
 public class VentanaController implements Initializable {
@@ -33,7 +33,7 @@ public class VentanaController implements Initializable {
     {}
 
     @FXML
-    public void CloseApp(ActionEvent event) throws Exception
+    public void eventCloseApp(ActionEvent event) throws Exception
     { Platform.exit();
       System.exit(0);
     }
@@ -52,6 +52,7 @@ public class VentanaController implements Initializable {
         Stage stage = new Stage();
         stage.getIcons().add(new Image("images/ico_taller.jpg"));
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.showAndWait();
     /*    TallerMecanico m = new TallerMecanico();              
@@ -74,6 +75,7 @@ public class VentanaController implements Initializable {
         Stage stage = new Stage();
         stage.getIcons().add(new Image("images/ico_taller.jpg"));
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.showAndWait();
     /*    TallerMecanico m = new TallerMecanico();              
@@ -94,6 +96,7 @@ public class VentanaController implements Initializable {
         Stage stage = new Stage();
         stage.getIcons().add(new Image("images/ico_taller.jpg"));        
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.showAndWait();
 
@@ -110,6 +113,7 @@ public class VentanaController implements Initializable {
         Stage stage = new Stage();
         stage.getIcons().add(new Image("images/ico_taller.jpg"));        
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.showAndWait();
 
@@ -126,6 +130,24 @@ public class VentanaController implements Initializable {
         Stage stage = new Stage();
         stage.getIcons().add(new Image("images/ico_taller.jpg"));        
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.showAndWait();
+
+    }
+    
+        @FXML    
+    public void eventReportes(ActionEvent event) throws Exception {
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Reporte.fxml"));
+                
+        Parent root = loader.load();
+              
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.getIcons().add(new Image("images/ico_taller.jpg"));        
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.showAndWait();
 
