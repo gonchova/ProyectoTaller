@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author CHOVA
  */
-public class NuevoTurnoController implements Initializable {
+public class TurnoController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -23,5 +23,6 @@ public class NuevoTurnoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+   
+
 }

@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
@@ -36,8 +37,18 @@ public class TallerMecanico extends Application {
         Parent Pant = FXMLLoader.load(getClass().getResource(fxml));
        
         stg.setResizable(false);
-        stg.setWidth(600);
+        
+        if (fxml.equals("/view/Ventana.fxml")) {
+           stg.setWidth(600);
+        }  
+        
+           //Scene scene = new Scene();
+        //scene= stg.getScene();
+        
         stg.getScene().setRoot(Pant);
+        //scene.setRoot(Pant);
+        
     }
+    
     
 }

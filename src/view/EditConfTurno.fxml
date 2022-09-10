@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.AutoCompleteTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NuevoTurnoController">
+<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TurnoController">
    <children>
       <BorderPane prefHeight="251.0" prefWidth="299.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -32,11 +32,11 @@
                <children>
                   <DatePicker layoutX="92.0" layoutY="47.0" prefHeight="25.0" prefWidth="142.0" />
                   <Label layoutX="12.0" layoutY="51.0" text="FECHA:" />
-                  <AutoCompleteTextField layoutX="91.0" layoutY="16.0" prefHeight="25.0" prefWidth="141.0" />
                   <Label layoutX="12.0" layoutY="20.0" text="NRO TURNO:" />
                   <Button layoutX="72.0" layoutY="142.0" mnemonicParsing="false" text="Guardar" />
                   <Button layoutX="181.0" layoutY="142.0" mnemonicParsing="false" text="Cancelar" />
                   <Button layoutX="116.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="ASISTIO" />
+                  <TextField layoutX="92.0" layoutY="16.0" prefHeight="25.0" prefWidth="142.0" />
                </children>
             </Pane>
          </bottom>
