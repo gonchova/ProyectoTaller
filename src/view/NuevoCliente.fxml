@@ -101,12 +101,15 @@
                            </VBox.margin>
                         </TextField>
                            <ComboBox prefHeight="25.0" prefWidth="135.0" />
-                           <ComboBox prefHeight="25.0" prefWidth="135.0" />
+                           <ComboBox prefHeight="25.0" prefWidth="135.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin></ComboBox>
                      </children>
                   </VBox>
-                  <Button layoutX="236.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Veh." />
+                  <Button layoutX="236.0" layoutY="195.0" mnemonicParsing="false" onAction="#eventNuevoVehiculo" prefHeight="25.0" prefWidth="83.0" text="Nuevo Veh." />
                   <Label layoutX="14.0" layoutY="226.0" prefWidth="58.0" text="SEGURO:" />
-                  <Button layoutX="236.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Seg." />
+                  <Button layoutX="236.0" layoutY="225.0" mnemonicParsing="false" onAction="#eventNuevoSeguro" prefHeight="25.0" prefWidth="83.0" text="Nuevo Seg." />
                </children>
             </Pane>
          </bottom>

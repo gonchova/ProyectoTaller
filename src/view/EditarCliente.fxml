@@ -114,9 +114,9 @@
                            </VBox.margin></ComboBox>
                      </children>
                   </VBox>
-                  <Button layoutX="236.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Veh." />
+                  <Button fx:id="nuevoVehiculo" layoutX="236.0" layoutY="199.0" mnemonicParsing="false" onAction="#eventNuevoVehiculo" prefHeight="25.0" prefWidth="83.0" text="Nuevo Veh." />
                   <Label layoutX="14.0" layoutY="232.0" prefWidth="58.0" text="SEGURO:" />
-                  <Button layoutX="236.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Seg." />
+                  <Button fx:id="nuevoseguro" layoutX="236.0" layoutY="228.0" mnemonicParsing="false" onAction="#eventNuevoSeguro" prefHeight="25.0" prefWidth="83.0" text="Nuevo Seg." />
                </children>
             </Pane>
          </bottom>
