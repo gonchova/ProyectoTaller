@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -31,6 +32,39 @@ public class ClienteController implements Initializable {
         // TODO
     }    
        
+    @FXML    
+    public void eventNuevoVehiculo(ActionEvent event) throws Exception {
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/NuevoVehiculo.fxml"));
+                
+        Parent root = loader.load();
+              
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.getIcons().add(new Image("images/ico_taller.jpg"));        
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.showAndWait();
 
+    }
+    
+
+    @FXML    
+    public void eventNuevoSeguro(ActionEvent event) throws Exception {
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/NuevoSeguro.fxml"));
+                
+        Parent root = loader.load();
+              
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.getIcons().add(new Image("images/ico_taller.jpg"));        
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.showAndWait();
+
+    }
         
 }
