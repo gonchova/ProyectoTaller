@@ -31,8 +31,8 @@
                   <Insets />
                </BorderPane.margin>
                <children>
-                  <Button layoutX="83.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Crear" />
-                  <Button layoutX="192.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Cancelar" />
+                  <Button layoutX="85.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Crear" />
+                  <Button layoutX="195.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Cancelar" />
                   <VBox layoutX="14.0" layoutY="17.0" prefHeight="232.0" prefWidth="79.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="80.0" text="NRO CLIENTE:">
@@ -104,20 +104,19 @@
                               <Insets right="5.0" />
                            </VBox.margin>
                         </TextField>
-                        <ComboBox prefHeight="25.0" prefWidth="136.0">
+                        <ComboBox prefHeight="25.0" prefWidth="135.0">
                            <VBox.margin>
                               <Insets top="5.0" />
                            </VBox.margin></ComboBox>
-                        <Label prefHeight="18.0" prefWidth="141.0" text="Seguro vehiculo">
+                           <ComboBox prefHeight="25.0" prefWidth="135.0">
                            <VBox.margin>
                               <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
+                           </VBox.margin></ComboBox>
                      </children>
                   </VBox>
                   <Button layoutX="236.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Veh." />
-                  <Label layoutX="14.0" layoutY="228.0" prefWidth="58.0" text="SEGURO:" />
-                  <Button layoutX="240.0" layoutY="18.0" mnemonicParsing="false" text="Buscar" />
+                  <Label layoutX="14.0" layoutY="232.0" prefWidth="58.0" text="SEGURO:" />
+                  <Button layoutX="236.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Nuevo Seg." />
                </children>
             </Pane>
          </bottom>
